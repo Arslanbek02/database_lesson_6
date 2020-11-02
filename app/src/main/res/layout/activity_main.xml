@@ -1,29 +1,111 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/margin"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android: android:orientation="vertical"
+    android:background="@drawable/mobile_bg"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <EditText
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="418dp"
+        android:layout_height="270dp"
+        android:layout_gravity="center"
+        app:srcCompat="@drawable/register_1"
+        android:contentDescription="TODO" />
+
+
+    <TextView
+        android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:hint="Enter Full Name"
-        android:drawableLeft="@drawable/ic_baseline_person_outline_24" />
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:background="#7578DFAA"
+        android:fontFamily="serif"
+        android:gravity="center"
+        android:text="Registration Form"
+        android:textColor="#AE36F4C8"
+        android:textSize="36sp"
+        android:textStyle="bold|italic" />
 
     <EditText
+        android:id="@+id/input_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="40dp"
+        android:background="#ADFFFFFF"
+        android:drawableLeft="@drawable/ic_baseline_person_outline_24"
+        android:hint="Enter Full Name"
+        android:textColor="@color/black"
+        android:inputType="textPersonName"/>
+
+    <EditText
+        android:id="@+id/input_surname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:background="#ADFFFFFF"
+        android:drawableLeft="@drawable/ic_baseline_person_outline_24"
         android:hint="Enter Surname"
-        android:drawableLeft="@drawable/ic_baseline_person_outline_24"/>
-    <Button
+        android:textColor="@color/black"
+        android:inputType="textnu"/>
+
+    <EditText
+        android:id="@+id/input_phone_number"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="40dp"
+        android:background="#ADFFFFFF"
+        android:drawableLeft="@drawable/ic_baseline_phone_24"
+        android:hint="Enter Phone Number"
+        android:inputType="number|phone"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/input_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="40dp"
+        android:background="#ADFFFFFF"
+        android:drawableLeft="@drawable/ic_baseline_email_24"
+        android:hint="Enter e-mail"
+        android:inputType="textWebEmailAddress"
+        android:textColor="@color/black" />
+    <EditText
+        android:id="@+id/input_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="15dp"
+        android:background="#ADFFFFFF"
+        android:drawableLeft="@drawable/ic_baseline_lock_24"
+        android:hint="Enter password"
+        android:textColor="@color/black"
+        android:inputType="textPassword"/>
+
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="40dp"
         android:text="Submit"
+        android:textColorLink="#F11010"
+        app:cornerRadius="30dp" />
 
 </LinearLayout>
