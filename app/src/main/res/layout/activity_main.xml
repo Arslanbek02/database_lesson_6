@@ -56,7 +56,7 @@
         android:drawableLeft="@drawable/ic_baseline_person_outline_24"
         android:hint="Enter Surname"
         android:textColor="@color/black"
-        android:inputType="textnu"/>
+        android:inputType="textPersonName"/>
 
     <EditText
         android:id="@+id/input_phone_number"

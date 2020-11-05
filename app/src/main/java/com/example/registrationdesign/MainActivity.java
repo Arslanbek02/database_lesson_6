@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
@@ -36,18 +37,28 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     @Override
-    public void Onclick(View View) {
+    public void onClick(View view) {
         int res = 0;
 
-        if (view.getId()) == R.id.btn_plus{
+        if (view.getId() == R.id.btn_plus) {
 
             res = Integer.parseInt(number1.getText().toString()) +
                     Integer.parseInt(number2.getText().toString());
-        }
-        else if (view.getId()) == R.id.btn_minus{
+        } else if (view.getId() == R.id.btn_minus) {
 
             res = Integer.parseInt(number1.getText().toString()) -
                     Integer.parseInt(number2.getText().toString());
+        }
+        else if (view.getId() == R.id.btn_multi) {
+
+            res = Integer.parseInt(number1.getText().toString()) *
+                    Integer.parseInt(number2.getText().toString());
+        }
+        else if (view.getId() == R.id.btn_divide) {
+
+            res = Integer.parseInt(number1.getText().toString()) /
+                    Integer.parseInt(number2.getText().toString());
+        }
+        tvResult.setText("Result: " + res);
     }
-        tvResult.setText("Result: " + res)
-}
+    }
