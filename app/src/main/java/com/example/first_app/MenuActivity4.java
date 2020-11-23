@@ -7,14 +7,14 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class MenuActivity1 extends AppCompatActivity implements View.OnClickListener {
+public class MenuActivity4 extends AppCompatActivity implements View.OnClickListener {
 
     Button btnBack;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_menu1);
+        setContentView(R.layout.activity_menu4);
 
         btnBack = findViewById(R.id.btnBack);
         btnBack.setOnClickListener(this);

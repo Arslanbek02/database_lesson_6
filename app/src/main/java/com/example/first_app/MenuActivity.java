@@ -32,8 +32,14 @@ public class MenuActivity extends AppCompatActivity implements View.OnClickListe
             Intent menu1 = new Intent(this, MenuActivity1.class);
             startActivity(menu1);
         }else if(view.getId() == R.id.btnMenu2){
-            Intent menu1 = new Intent(this, MenuActivity1.class);
-            startActivity(menu1);
+            Intent menu2 = new Intent(this, MenuActivity2.class);
+            startActivity(menu2);
+        }else if(view.getId() == R.id.btnMenu3) {
+            Intent menu3 = new Intent(this, MenuActivity3.class);
+            startActivity(menu3);
+        }else if(view.getId() == R.id.btnMenu4) {
+            Intent menu4 = new Intent(this, MenuActivity4.class);
+            startActivity(menu4);
         }
     }
 }
