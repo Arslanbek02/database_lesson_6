@@ -1,11 +1,16 @@
 package com.example.first_app;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 public class MenuActivity4 extends AppCompatActivity implements View.OnClickListener {
 
@@ -25,5 +30,30 @@ public class MenuActivity4 extends AppCompatActivity implements View.OnClickList
             Intent main_menu = new Intent(this, MenuActivity.class);
             startActivity(main_menu);
         }
+    }
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu){
+        MenuInflater menuInflater = getMenuInflater();
+        menuInflater.inflate(R.menu.main, menu);
+        return true;
+    }
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item){
+        switch (item.getItemId()) {
+            case R.id.menu_settings:
+                Toast.makeText(this, "Setting menu clicked", Toast.LENGTH_SHORT).show();
+                break;
+
+            case R.id.menu_refresh:
+                Toast.makeText(this, "Refresh menu clicked", Toast.LENGTH_SHORT).show();
+                break;
+
+            case R.id.menu_delete:
+                Toast.makeText(this, "Delete menu clicked", Toast.LENGTH_SHORT).show();
+                break;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+        return true;
     }
 }
