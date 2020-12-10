@@ -1,25 +1,27 @@
-package com.example.first_app;
+package com.example.first_app.menu_activities;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
+import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
-import android.content.Intent;
-import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
-public class MenuActivity1 extends AppCompatActivity implements View.OnClickListener {
+import com.example.first_app.R;
+
+public class MenuActivity3 extends AppCompatActivity implements View.OnClickListener {
 
     Button btnBack;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_menu1);
+        setContentView(R.layout.activity_menu3);
 
         btnBack = findViewById(R.id.btnBack);
         btnBack.setOnClickListener(this);

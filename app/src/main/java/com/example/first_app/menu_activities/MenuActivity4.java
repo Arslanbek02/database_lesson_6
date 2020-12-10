@@ -1,4 +1,4 @@
-package com.example.first_app;
+package com.example.first_app.menu_activities;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -11,6 +11,8 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
+
+import com.example.first_app.R;
 
 public class MenuActivity4 extends AppCompatActivity implements View.OnClickListener {
 

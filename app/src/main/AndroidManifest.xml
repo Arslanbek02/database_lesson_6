@@ -9,11 +9,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MenuActivity4" />
-        <activity android:name=".MenuActivity3" />
-        <activity android:name=".MenuActivity2" />
-        <activity android:name=".MenuActivity1" />
-        <activity android:name=".MenuActivity">
+
+        <activity android:name=".authentification.LoginActivity" />
+        <activity android:name=".menu_activities.MenuActivity4" />
+        <activity android:name=".menu_activities.MenuActivity3" />
+        <activity android:name=".menu_activities.MenuActivity2" />
+        <activity android:name=".menu_activities.MenuActivity1" />
+        <activity android:name=".menu_activities.MenuActivity"/>
+
+        <activity android:name=".authentification.RegistrationActivity" >
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
